@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbShoppingForumModelStoreContainer" CdmEntityContainer="dbShoppingForumEntities">
+    <EntitySetMapping Name="tAdminManagers">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tAdminManager">
+        <MappingFragment StoreEntitySet="tAdminManager">
+          <ScalarProperty Name="ManagerAuth" ColumnName="ManagerAuth" />
+          <ScalarProperty Name="ManagerEmail" ColumnName="ManagerEmail" />
+          <ScalarProperty Name="ManagerPasswordSalt" ColumnName="ManagerPasswordSalt" />
+          <ScalarProperty Name="ManagerPassword" ColumnName="ManagerPassword" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tCategories">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tCategory">
+        <MappingFragment StoreEntitySet="tCategory">
+          <ScalarProperty Name="fCategoryName" ColumnName="fCategoryName" />
+          <ScalarProperty Name="fCategoryID" ColumnName="fCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tDiscounts">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tDiscount">
+        <MappingFragment StoreEntitySet="tDiscount">
+          <ScalarProperty Name="fEnable" ColumnName="fEnable" />
+          <ScalarProperty Name="fEndDate" ColumnName="fEndDate" />
+          <ScalarProperty Name="fStartdate" ColumnName="fStartdate" />
+          <ScalarProperty Name="fDiscountContent" ColumnName="fDiscountContent" />
+          <ScalarProperty Name="fMoneyLimit" ColumnName="fMoneyLimit" />
+          <ScalarProperty Name="fDiscountMoneyRule" ColumnName="fDiscountMoneyRule" />
+          <ScalarProperty Name="fDiscountCategory" ColumnName="fDiscountCategory" />
+          <ScalarProperty Name="fDiscountName" ColumnName="fDiscountName" />
+          <ScalarProperty Name="fDiscountCode" ColumnName="fDiscountCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tEfficacies">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tEfficacy">
+        <MappingFragment StoreEntitySet="tEfficacy">
+          <ScalarProperty Name="fEfficacyName" ColumnName="fEfficacyName" />
+          <ScalarProperty Name="fEfficacyID" ColumnName="fEfficacyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tfeatures">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tfeature">
+        <MappingFragment StoreEntitySet="tfeature">
+          <ScalarProperty Name="ffeatureName" ColumnName="ffeatureName" />
+          <ScalarProperty Name="ffeatureID" ColumnName="ffeatureID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tForums">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tForum">
+        <MappingFragment StoreEntitySet="tForum">
+          <ScalarProperty Name="fTotalReplyCount" ColumnName="fTotalReplyCount" />
+          <ScalarProperty Name="fTotalViewCount" ColumnName="fTotalViewCount" />
+          <ScalarProperty Name="fTopSeq" ColumnName="fTopSeq" />
+          <ScalarProperty Name="fDisableTime" ColumnName="fDisableTime" />
+          <ScalarProperty Name="fEnableUserId" ColumnName="fEnableUserId" />
+          <ScalarProperty Name="fEnableFlag" ColumnName="fEnableFlag" />
+          <ScalarProperty Name="fUpdateTime" ColumnName="fUpdateTime" />
+          <ScalarProperty Name="fCreateTime" ColumnName="fCreateTime" />
+          <ScalarProperty Name="fIsPost" ColumnName="fIsPost" />
+          <ScalarProperty Name="fPostContent" ColumnName="fPostContent" />
+          <ScalarProperty Name="fPostTitle" ColumnName="fPostTitle" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+          <ScalarProperty Name="fPostId" ColumnName="fPostId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tForumAnalysis">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tForumAnalysi">
+        <MappingFragment StoreEntitySet="tForumAnalysis">
+          <ScalarProperty Name="fShareCount" ColumnName="fShareCount" />
+          <ScalarProperty Name="fLikeHate" ColumnName="fLikeHate" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+          <ScalarProperty Name="fPostId" ColumnName="fPostId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tForumAuths">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tForumAuth">
+        <MappingFragment StoreEntitySet="tForumAuth">
+          <ScalarProperty Name="fAuthDeleteReplyFlag" ColumnName="fAuthDeleteReplyFlag" />
+          <ScalarProperty Name="fAuthDeletePostFlag" ColumnName="fAuthDeletePostFlag" />
+          <ScalarProperty Name="fAuthUpdateReplyFlag" ColumnName="fAuthUpdateReplyFlag" />
+          <ScalarProperty Name="fAuthUpdatePostFlag" ColumnName="fAuthUpdatePostFlag" />
+          <ScalarProperty Name="fAuthReplyFlag" ColumnName="fAuthReplyFlag" />
+          <ScalarProperty Name="fAuthPostFlag" ColumnName="fAuthPostFlag" />
+          <ScalarProperty Name="fAuthBlackList" ColumnName="fAuthBlackList" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tForumReplies">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tForumReply">
+        <MappingFragment StoreEntitySet="tForumReply">
+          <ScalarProperty Name="fContent" ColumnName="fContent" />
+          <ScalarProperty Name="fDeleteUserId" ColumnName="fDeleteUserId" />
+          <ScalarProperty Name="fEnableFlag" ColumnName="fEnableFlag" />
+          <ScalarProperty Name="fReplyTime" ColumnName="fReplyTime" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+          <ScalarProperty Name="fReplySeqNo" ColumnName="fReplySeqNo" />
+          <ScalarProperty Name="fReplyTargetId" ColumnName="fReplyTargetId" />
+          <ScalarProperty Name="fReplyId" ColumnName="fReplyId" />
+          <ScalarProperty Name="fPostId" ColumnName="fPostId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tForumReplyAnalysis">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tForumReplyAnalysi">
+        <MappingFragment StoreEntitySet="tForumReplyAnalysis">
+          <ScalarProperty Name="fLikeHate" ColumnName="fLikeHate" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+          <ScalarProperty Name="fReplyId" ColumnName="fReplyId" />
+          <ScalarProperty Name="fPostId" ColumnName="fPostId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tNews">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tNew">
+        <MappingFragment StoreEntitySet="tNews">
+          <ScalarProperty Name="fApproved" ColumnName="fApproved" />
+          <ScalarProperty Name="fDeleteUser" ColumnName="fDeleteUser" />
+          <ScalarProperty Name="fChangUser" ColumnName="fChangUser" />
+          <ScalarProperty Name="fAddUser" ColumnName="fAddUser" />
+          <ScalarProperty Name="fGet_No" ColumnName="fGet_No" />
+          <ScalarProperty Name="fNewsTag" ColumnName="fNewsTag" />
+          <ScalarProperty Name="fNewsArticle" ColumnName="fNewsArticle" />
+          <ScalarProperty Name="fNewsDesc" ColumnName="fNewsDesc" />
+          <ScalarProperty Name="fNewsTitle" ColumnName="fNewsTitle" />
+          <ScalarProperty Name="fClass" ColumnName="fClass" />
+          <ScalarProperty Name="fNewsEnd" ColumnName="fNewsEnd" />
+          <ScalarProperty Name="fNewsStart" ColumnName="fNewsStart" />
+          <ScalarProperty Name="fNewsId" ColumnName="fNewsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tNewsMessages">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tNewsMessage">
+        <MappingFragment StoreEntitySet="tNewsMessage">
+          <ScalarProperty Name="fM_AddUser" ColumnName="fM_AddUser" />
+          <ScalarProperty Name="fMessageArticle" ColumnName="fMessageArticle" />
+          <ScalarProperty Name="fMessageTime" ColumnName="fMessageTime" />
+          <ScalarProperty Name="fNewsId" ColumnName="fNewsId" />
+          <ScalarProperty Name="fMessageId" ColumnName="fMessageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tNotes">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tNote">
+        <MappingFragment StoreEntitySet="tNote">
+          <ScalarProperty Name="fNoteName" ColumnName="fNoteName" />
+          <ScalarProperty Name="fNoteID" ColumnName="fNoteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tOrders">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tOrder">
+        <MappingFragment StoreEntitySet="tOrder">
+          <ScalarProperty Name="fPayment" ColumnName="fPayment" />
+          <ScalarProperty Name="fDiscountCode" ColumnName="fDiscountCode" />
+          <ScalarProperty Name="fOrderPostScript" ColumnName="fOrderPostScript" />
+          <ScalarProperty Name="fOrderTaxIdDNumber" ColumnName="fOrderTaxIdDNumber" />
+          <ScalarProperty Name="fOrderCompanyTitle" ColumnName="fOrderCompanyTitle" />
+          <ScalarProperty Name="fConsigneeAddress" ColumnName="fConsigneeAddress" />
+          <ScalarProperty Name="fConsigneeCellPhone" ColumnName="fConsigneeCellPhone" />
+          <ScalarProperty Name="fConsigneeTelephone" ColumnName="fConsigneeTelephone" />
+          <ScalarProperty Name="fConsigneeName" ColumnName="fConsigneeName" />
+          <ScalarProperty Name="fScore" ColumnName="fScore" />
+          <ScalarProperty Name="fRequiredDate" ColumnName="fRequiredDate" />
+          <ScalarProperty Name="fShippedDate" ColumnName="fShippedDate" />
+          <ScalarProperty Name="fOrderDate" ColumnName="fOrderDate" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+          <ScalarProperty Name="fOrderId" ColumnName="fOrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tOrderDetails">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tOrderDetail">
+        <MappingFragment StoreEntitySet="tOrderDetail">
+          <ScalarProperty Name="fOrderQuantity" ColumnName="fOrderQuantity" />
+          <ScalarProperty Name="fUnitPrice" ColumnName="fUnitPrice" />
+          <ScalarProperty Name="fProductId" ColumnName="fProductId" />
+          <ScalarProperty Name="fOrderId" ColumnName="fOrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tParts">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tPart">
+        <MappingFragment StoreEntitySet="tPart">
+          <ScalarProperty Name="fPartName" ColumnName="fPartName" />
+          <ScalarProperty Name="fPartID" ColumnName="fPartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tProducts">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tProduct">
+        <MappingFragment StoreEntitySet="tProduct">
+          <ScalarProperty Name="fCategoryID" ColumnName="fCategoryID" />
+          <ScalarProperty Name="fDiscontinued" ColumnName="fDiscontinued" />
+          <ScalarProperty Name="fUnitsInStock" ColumnName="fUnitsInStock" />
+          <ScalarProperty Name="fQuantityPerUnit" ColumnName="fQuantityPerUnit" />
+          <ScalarProperty Name="fUnitPrice" ColumnName="fUnitPrice" />
+          <ScalarProperty Name="fProductDesc" ColumnName="fProductDesc" />
+          <ScalarProperty Name="fProductChName" ColumnName="fProductChName" />
+          <ScalarProperty Name="fProductID" ColumnName="fProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tProductImages">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tProductImage">
+        <MappingFragment StoreEntitySet="tProductImage">
+          <ScalarProperty Name="fProductImagePath" ColumnName="fProductImagePath" />
+          <ScalarProperty Name="fProductImageId" ColumnName="fProductImageId" />
+          <ScalarProperty Name="fProductID" ColumnName="fProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tProductUnilaterals">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tProductUnilateral">
+        <MappingFragment StoreEntitySet="tProductUnilateral">
+          <ScalarProperty Name="fextraction" ColumnName="fextraction" />
+          <ScalarProperty Name="fOrigin" ColumnName="fOrigin" />
+          <ScalarProperty Name="fNoteID" ColumnName="fNoteID" />
+          <ScalarProperty Name="fPartID" ColumnName="fPartID" />
+          <ScalarProperty Name="fProductID" ColumnName="fProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tProductVegetableoils">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tProductVegetableoil">
+        <MappingFragment StoreEntitySet="tProductVegetableoil">
+          <ScalarProperty Name="ffeatureID" ColumnName="ffeatureID" />
+          <ScalarProperty Name="fProductID" ColumnName="fProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tQuestions">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tQuestion">
+        <MappingFragment StoreEntitySet="tQuestion">
+          <ScalarProperty Name="fItemE" ColumnName="fItemE" />
+          <ScalarProperty Name="fItemD" ColumnName="fItemD" />
+          <ScalarProperty Name="fItemC" ColumnName="fItemC" />
+          <ScalarProperty Name="fItemB" ColumnName="fItemB" />
+          <ScalarProperty Name="fItemA" ColumnName="fItemA" />
+          <ScalarProperty Name="fAnswer" ColumnName="fAnswer" />
+          <ScalarProperty Name="fQuestion" ColumnName="fQuestion" />
+          <ScalarProperty Name="fQuestionName" ColumnName="fQuestionName" />
+          <ScalarProperty Name="fQuestionId" ColumnName="fQuestionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tScores">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tScore">
+        <MappingFragment StoreEntitySet="tScore">
+          <ScalarProperty Name="fAuthTestFlag" ColumnName="fAuthTestFlag" />
+          <ScalarProperty Name="fScoreDate" ColumnName="fScoreDate" />
+          <ScalarProperty Name="fQuestionScore" ColumnName="fQuestionScore" />
+          <ScalarProperty Name="fActiveScore" ColumnName="fActiveScore" />
+          <ScalarProperty Name="fScore" ColumnName="fScore" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tShoppingCarts">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tShoppingCart">
+        <MappingFragment StoreEntitySet="tShoppingCart">
+          <ScalarProperty Name="fAddTime" ColumnName="fAddTime" />
+          <ScalarProperty Name="fQuantity" ColumnName="fQuantity" />
+          <ScalarProperty Name="fProductID" ColumnName="fProductID" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+          <ScalarProperty Name="fBasketId" ColumnName="fBasketId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tTests">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tTest">
+        <MappingFragment StoreEntitySet="tTest">
+          <ScalarProperty Name="fQuestionScore" ColumnName="fQuestionScore" />
+          <ScalarProperty Name="fScoreDate" ColumnName="fScoreDate" />
+          <ScalarProperty Name="fCorrectCount" ColumnName="fCorrectCount" />
+          <ScalarProperty Name="fQuestionCount" ColumnName="fQuestionCount" />
+          <ScalarProperty Name="fTestCost" ColumnName="fTestCost" />
+          <ScalarProperty Name="fTestEnd" ColumnName="fTestEnd" />
+          <ScalarProperty Name="fTestStar" ColumnName="fTestStar" />
+          <ScalarProperty Name="fQuestionId" ColumnName="fQuestionId" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+          <ScalarProperty Name="fTestId" ColumnName="fTestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tUserBrowseHistories">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tUserBrowseHistory">
+        <MappingFragment StoreEntitySet="tUserBrowseHistory">
+          <ScalarProperty Name="fBrowseTime" ColumnName="fBrowseTime" />
+          <ScalarProperty Name="fProductId" ColumnName="fProductId" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+          <ScalarProperty Name="fBrowseHistoryId" ColumnName="fBrowseHistoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tUserDiscountLists">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tUserDiscountList">
+        <MappingFragment StoreEntitySet="tUserDiscountList">
+          <ScalarProperty Name="fCount" ColumnName="fCount" />
+          <ScalarProperty Name="fDiscountCode" ColumnName="fDiscountCode" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tUserFavorites">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tUserFavorite">
+        <MappingFragment StoreEntitySet="tUserFavorite">
+          <ScalarProperty Name="fPostId" ColumnName="fPostId" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tUserLogs">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tUserLog">
+        <MappingFragment StoreEntitySet="tUserLog">
+          <ScalarProperty Name="fUserIP" ColumnName="fUserIP" />
+          <ScalarProperty Name="fErrorPasswordCount" ColumnName="fErrorPasswordCount" />
+          <ScalarProperty Name="fLogoutTime" ColumnName="fLogoutTime" />
+          <ScalarProperty Name="fLoginTime" ColumnName="fLoginTime" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tUserProductFavorites">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tUserProductFavorite">
+        <MappingFragment StoreEntitySet="tUserProductFavorite">
+          <ScalarProperty Name="fAddTime" ColumnName="fAddTime" />
+          <ScalarProperty Name="fProductId" ColumnName="fProductId" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+          <ScalarProperty Name="fFavoriteId" ColumnName="fFavoriteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tUserProfiles">
+      <EntityTypeMapping TypeName="dbShoppingForumModel.tUserProfile">
+        <MappingFragment StoreEntitySet="tUserProfile">
+          <ScalarProperty Name="fAuthReply" ColumnName="fAuthReply" />
+          <ScalarProperty Name="fAuthPost" ColumnName="fAuthPost" />
+          <ScalarProperty Name="fAuth" ColumnName="fAuth" />
+          <ScalarProperty Name="fScore" ColumnName="fScore" />
+          <ScalarProperty Name="fCreateDate" ColumnName="fCreateDate" />
+          <ScalarProperty Name="fPhoto" ColumnName="fPhoto" />
+          <ScalarProperty Name="fAddress" ColumnName="fAddress" />
+          <ScalarProperty Name="fCity" ColumnName="fCity" />
+          <ScalarProperty Name="fPhone" ColumnName="fPhone" />
+          <ScalarProperty Name="fTel" ColumnName="fTel" />
+          <ScalarProperty Name="fBirthday" ColumnName="fBirthday" />
+          <ScalarProperty Name="fGender" ColumnName="fGender" />
+          <ScalarProperty Name="fName" ColumnName="fName" />
+          <ScalarProperty Name="fPasswordSalt" ColumnName="fPasswordSalt" />
+          <ScalarProperty Name="fPassword" ColumnName="fPassword" />
+          <ScalarProperty Name="fUserId" ColumnName="fUserId" />
+          <ScalarProperty Name="fId" ColumnName="fId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="tProdEfficacyRelation" TypeName="dbShoppingForumModel.tProdEfficacyRelation" StoreEntitySet="tProdEfficacyRelation">
+      <EndProperty Name="tProduct">
+        <ScalarProperty Name="fProductID" ColumnName="fProductID" />
+      </EndProperty>
+      <EndProperty Name="tEfficacy">
+        <ScalarProperty Name="fEfficacyID" ColumnName="fEfficacyID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

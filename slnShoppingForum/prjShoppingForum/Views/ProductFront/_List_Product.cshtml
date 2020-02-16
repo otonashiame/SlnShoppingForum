@@ -1,0 +1,42 @@
+﻿@model IEnumerable<prjShoppingForum.Models.Entity.tProduct>
+
+<script>
+        function addToCart(productId) {
+            $.ajax({
+                type: 'POST',
+                url:'@Url.Action("addCart", "ShoppingCart")',
+                data: { productId: productId}
+            })
+        }
+</script>
+
+@foreach (var item in Model)
+{
+    var imageScr = $"../../images/Product/{item.fProductID}.jpg";
+
+    <div class="col-lg-4">
+        <div class="thumbnail" style="width:150px;">
+            @*商品圖片*@
+            <a href="../../ProductFront/ProductSinglePage?productId=@item.fProductID">
+                <img src="@imageScr" style="width:80%" />
+            </a>
+            <div class="caption"></div>
+            @*商品名稱*@
+            <span>
+                @Html.DisplayNameFor(m => m.FirstOrDefault().fProductChName)
+                <a href="../../ProductFront/ProductSinglePage?productId=@item.fProductID">
+                    @item.fProductChName
+                </a>
+            </span>
+            @*商品價錢*@
+            <span>@Html.DisplayNameFor(m => m.FirstOrDefault().fUnitPrice) @item.fUnitPrice</span>
+            <br />
+            @*加入購物車按鈕*@
+            <a class="btn btn-info" onclick="addToCart(@item.fProductID)">加入購物車</a>
+        </div>
+    </div>
+    @*頁數選擇*@
+
+}
+
+
