@@ -10,6 +10,8 @@ using System.Web.Mvc;
 
 //安裝PagedList.Mvc 4.5.0 && PagedList 1.17.0
 using PagedList;
+using System.IO;
+using prjShoppingForum.Models.Product;
 
 namespace tw.com.essentialoil.Controllers
 {
@@ -42,7 +44,7 @@ namespace tw.com.essentialoil.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult ProductCreate(tProduct prod)
+        public ActionResult ProductCreate(tProduct prod,HttpPostedFileBase prodImg)
         {
 
             ViewBag.PartDropDownList = DropDownList.GetPartDropDownList();
@@ -51,7 +53,8 @@ namespace tw.com.essentialoil.Controllers
             ViewBag.EfficacyDropLise = DropDownList.GetEfficacyDropLise();
             ViewBag.featureDropList = DropDownList.GetfeatureDropList();
 
-            ViewBag.State = "success";
+            ProductImage productImage = new ProductImage();
+            productImage.GetImage(prod, prodImg, Server);
 
             //限定同時只有一位操作者能增加ProdcutID
             lock (lockObject)
@@ -100,7 +103,7 @@ namespace tw.com.essentialoil.Controllers
             return View(prod);
         }
         [HttpPost]
-        public ActionResult ProductEdit(tProduct prod)
+        public ActionResult ProductEdit(tProduct prod, HttpPostedFileBase prodImg)
         {
             ViewBag.PartDropDownList = DropDownList.GetPartDropDownList();
             ViewBag.NoteDropList = DropDownList.GetNoteDropList();
@@ -108,7 +111,8 @@ namespace tw.com.essentialoil.Controllers
             ViewBag.EfficacyDropLise = DropDownList.GetEfficacyDropLise();
             ViewBag.featureDropList = DropDownList.GetfeatureDropList();
 
-            db.SaveChanges();
+            ProductImage productImage = new ProductImage();
+            productImage.GetImage(prod, prodImg, Server);
             return RedirectToAction("ProductPage");
         }
     }

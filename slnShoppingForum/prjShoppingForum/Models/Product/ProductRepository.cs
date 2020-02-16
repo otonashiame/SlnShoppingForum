@@ -21,29 +21,29 @@ namespace tw.com.essentialoil.Product.Models
             }
 
             //找全部商品類別
-            if (categoryId != null)
+            if (categoryId != null && categoryId!=0)
             {
                 products = products.Where(p => p.fCategoryID == categoryId);
             }
             //找全部商品功效
-            if (efficacyId != null)
+            if (efficacyId != null && efficacyId != 0)
             {
                 products = products.Where(p => p.tEfficacies.Any(q => q.fEfficacyID == efficacyId));
             }
             //找單方精油香調
-            if (noteId != null)
+            if (noteId != null && noteId != 0)
             {
                 products = products.Where(p => p.tProductUnilateral != null &&
                 p.tProductUnilateral.fNoteID == noteId);
             }
             //找單方精油萃取部位
-            if (partId != null)
+            if (partId != null && partId != 0)
             {
                 products = products.Where(p => p.tProductUnilateral != null &&
                 p.tProductUnilateral.fPartID == partId);
             }
             //找植物油&純露特性
-            if (featureId != null)
+            if (featureId != null && featureId != 0)
             {
                 products = products.Where(p => p.tProductVegetableoil != null &&
                   p.tProductVegetableoil.ffeatureID == featureId);

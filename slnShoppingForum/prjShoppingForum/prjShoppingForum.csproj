@@ -974,6 +974,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\popper-utils.js" />
@@ -1188,6 +1193,7 @@
     <Compile Include="Models\Order\OrderView.cs" />
     <Compile Include="Models\Order\tOrderPartial.cs" />
     <Compile Include="Models\Product\DropDownList.cs" />
+    <Compile Include="Models\Product\ProductImage.cs" />
     <Compile Include="Models\Product\ProductMenuRepository.cs" />
     <Compile Include="Models\Product\ProductRepository.cs" />
     <Compile Include="Models\Product\tCategoryPartial.cs" />
@@ -1195,7 +1201,6 @@
     <Compile Include="Models\Product\tfeaturePartial.cs" />
     <Compile Include="Models\Product\tNotePartial.cs" />
     <Compile Include="Models\Product\tPartPartialcs.cs" />
-    <Compile Include="Models\Product\tProductImagePartial.cs" />
     <Compile Include="Models\Product\tProductPartial.cs" />
     <Compile Include="Models\Product\tProductUnilateralPartial.cs" />
     <Compile Include="Models\Product\tProductVegetableoilPartial.cs" />
@@ -1220,6 +1225,7 @@
     <Compile Include="ViewModels\Forum\CPostView.cs" />
     <Compile Include="ViewModels\HomePage.cs" />
     <Compile Include="ViewModels\Product\ProductMenu.cs" />
+    <Compile Include="ViewModels\Product\SearchModel.cs" />
     <Compile Include="ViewModels\ShoppingCart\CShoppingCart.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1306,6 +1312,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\ProductFront\AdvanceQuery.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
