@@ -13,5 +13,6 @@ namespace tw.com.essentialoil.Product.ViewModels
         public int? noteId { get; set; }
         public int? partId { get; set; }
         public int? featureId { get; set; }
+        public bool? fDiscontinued { get; set; }
     }
 }

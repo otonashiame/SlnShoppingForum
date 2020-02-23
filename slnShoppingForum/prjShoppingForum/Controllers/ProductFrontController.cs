@@ -19,7 +19,6 @@ namespace tw.com.essentialoil.Controllers
         DropDownList DropDownList = new DropDownList();
         ProductMenuRepository productMenuRepository = new ProductMenuRepository();
         ProductRepository productRepository = new ProductRepository();
-
         int pagesize = 10;
 
 
@@ -31,7 +30,7 @@ namespace tw.com.essentialoil.Controllers
 
             IQueryable<tProduct> products
             = productRepository.SearchProducts(searchModel.searchprod, searchModel.categoryId,
-            searchModel.efficacyId, searchModel.noteId, searchModel.partId, searchModel.featureId);
+            searchModel.efficacyId, searchModel.noteId, searchModel.partId, searchModel.featureId,searchModel.fDiscontinued);
 
             ViewBag.productMenu = productMenuRepository.GetProductMenu();
 
@@ -53,13 +52,30 @@ namespace tw.com.essentialoil.Controllers
             return View(ProductSingle);
         }
 
-        public ActionResult AdvanceQuery()
+        public ActionResult AdvanceQueryPage()
         {
-            return View();
+            SearchModel searchModel = new SearchModel();
+            ViewBag.PartDropDownList = DropDownList.GetPartDropDownList();
+            ViewBag.NoteDropList = DropDownList.GetNoteDropList();
+            ViewBag.CategoryDropList = DropDownList.GetCategoryDropList();
+            ViewBag.EfficacyDropLise = DropDownList.GetEfficacyDropLise();
+            ViewBag.featureDropList = DropDownList.GetfeatureDropList();
+            ViewBag.efficacyDropList = DropDownList.GetEfficacyDropList();
+
+            return View(searchModel);
         }
+        //[HttpPost]
+        //public ActionResult AdvanceQueryPage(SearchModel searchModel, int page = 1)
+        //{
+        //    int currentPage = page < 1 ? 1 : page;
+        //    ViewBag.SearchModel = searchModel == null ? new SearchModel() : searchModel;
 
+        //    ViewBag.productMenu = productMenuRepository.GetProductMenu();
+        //    ViewBag.SearchModel =  new SearchModel() ;
 
-
+        //    var products = productRepository.SearchProducts(searchprod, fCategoryID, efficacyId, fNoteID, fPartID, ffeatureID).ToList();
+        //    return View("ProductFrontPage", products.ToPagedList(1, pagesize));
+        //}
 
     }
 }

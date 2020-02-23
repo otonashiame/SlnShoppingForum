@@ -97,6 +97,17 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.fDiscontinued, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <select name="fDiscontinued" id="fDiscontinued">
+                    <option value="false" name="false">False</option>
+                    <option value="true" name="true">True</option>
+                </select>
+                @Html.ValidationMessageFor(model => model.fDiscontinued, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="確定修改" class="btn btn-info" />
             </div>

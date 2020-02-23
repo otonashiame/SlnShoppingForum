@@ -172,8 +172,8 @@ D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\bin\zh-Han
 D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\bin\zh-Hant\System.Web.WebPages.resources.dll
 D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
 D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
-D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\obj\Debug\prjShoppingForum.csprojAssemblyReference.cache
 D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\obj\Debug\prjShoppingForum.csproj.CoreCompileInputs.cache
 D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\obj\Debug\prjShoppingForum.csproj.CopyComplete
 D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\obj\Debug\prjShoppingForum.dll
 D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\obj\Debug\prjShoppingForum.pdb
+D:\Github\ShoppingForum-MergeResult\slnShoppingForum\prjShoppingForum\obj\Debug\prjShoppingForum.csprojAssemblyReference.cache

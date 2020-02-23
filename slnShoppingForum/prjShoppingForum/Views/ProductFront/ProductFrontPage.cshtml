@@ -22,6 +22,7 @@
 <div class="row" id="productListShow">
     @Html.Partial("_List_Product", Model)
 </div>
+@Html.ActionLink("進階搜尋", "AdvanceQueryPage")
 
 @*頁數選擇*@
 @Html.PagedListPager(Model, page => Url.Action("ProductFrontPage", new { page,

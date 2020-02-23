@@ -1193,7 +1193,6 @@
     <Compile Include="Models\Order\OrderView.cs" />
     <Compile Include="Models\Order\tOrderPartial.cs" />
     <Compile Include="Models\Product\DropDownList.cs" />
-    <Compile Include="Models\Product\ProductImage.cs" />
     <Compile Include="Models\Product\ProductMenuRepository.cs" />
     <Compile Include="Models\Product\ProductRepository.cs" />
     <Compile Include="Models\Product\tCategoryPartial.cs" />
@@ -1312,7 +1311,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\ProductFront\AdvanceQuery.cshtml" />
+    <Content Include="Views\ProductFront\AdvanceQueryPage1.cshtml" />
+    <Content Include="Views\ProductFront\AdvanceQueryPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
